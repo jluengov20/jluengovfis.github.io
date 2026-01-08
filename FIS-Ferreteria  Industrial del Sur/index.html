@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--METADATOS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jennifer Luengo">
+    <!--TITULO DE LA PAGINA-->
+    <title>FIS - Ferretería Industrial del Sur</title>
+    <link rel="icon" type="image/png" href="./imagenes/favicon/icono.png" >
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!--WhatsApp Float-->
+    <a href="https://wa.me/542995010054?text=Hola,%20me%20interesa%20un%20producto%20de%20Ferretería%20Industrial%20del%20Sur" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!--HEADER-->
+    <header class="header">
+        <div class="container header__content">
+            <div class="logo">
+                <div class="logo__img">FIS</div>
+                <div class="logo__text">
+                    <h1>Ferreteria Industrial</h1>
+                    <span>del Sur</span>
+                </div>
+            </div>  
+                
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link nav__link--active"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#categorias" class="nav__link"><i class="fas fa-th-large"></i> Categorias</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#productos" class="nav__link"><i class="fas fa-tools"></i> Productos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacto" class="nav__link"><i class="fas fa-envelope"></i> Contacto</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#login" class="nav__link link--button" id="login-btn"><i class="fas fa-user"></i> Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav__icons">
+                <div class="cart__icon" id="cart__icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart__count">0</span>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--HERO SECTION-->
+    <section class="hero" id="inicio">
+        <div class="container hero__content">
+            <h2 class="hero__title">Tu Ferreteria Industrial de Confianza</h2>
+            <p class="hero__description">Herramientas profesionales, materiales de construcción y equipamiento industrial de la más alta calidad para tus proyectos.</p>
+            <a href="#productos" class="btn btn--primary">Ver Catálogo</a>
+
+        <!--BARRA DE BUSQUEDA-->
+            <div class="search__container">
+                <form class="search-form" action="#" method="GET" role="search">   
+                    <input type="search" class="search-input" placeholder="Buscar productos..." aria-label="Buscar productos" name="q" required>
+                    <button type="submit" class="search-btn" aria-label="Buscar">
+                        <i class="fas fa-search"></i>
+                        <span class="sr-only">Buscar</span>
+                    </button>
+                </form>
+            </div> 
+        </div>
+    </section>
+
+    <!--CATEGORIAS-->
+    <section class="section categories" id="categorias">
+        <div class="container">
+            <h2 class="section__title">Nuestras Categorías</h2>
+            <div class="categories__grid">
+                <div class="category-card">
+                    <div class="category-card__icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3 class="category-card__title">Herramientas Manuales</h3>
+                    <p class="category-card__description">Llaves, destornilladores y más</p>
+                    <a href="#" class="btn btn--primary">Ver Productos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">
+                        <i class="fas fa-tools"></i>
+                    </div>  
+                    <h3 class="category-card__title">Herramientas Eléctricas</h3>
+                    <p class="category-card__description">Taladros, sierras y amoladoras</p>
+                    <a href="#" class="btn btn--primary">Ver Productos</a>       
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon"> 
+                        <i class="fas fa-bolt"></i>
+                    </div>  
+                    <h3 class="category-card__title">Material Eléctrico</h3>
+                    <p class="category-card__description">Cables, enchufes, tableros y más</p>
+                    <a href="#" class="btn btn--primary">Ver Productos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>  
+                    <h3 class="category-card__title">Seguridad Industrial</h3>
+                    <p class="category-card__description">Cascos, guantes, lentes y más</p>
+                    <a href="#" class="btn btn--primary">Ver Productos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="category-card__title">Materiales de Construcción</h3>
+                    <p class="category-card__description">Cemento, arena, ladrillos y más</p>
+                    <a href="#" class="btn btn--primary">Ver Productos</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-card__icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="category-card__title">Pinturas Industriales</h3>
+                    <p class="category-card__description">Esmaltes, Anticorrosivas, Aerosoles y más</p>
+                    <a href="#" class="btn btn--primary">Ver Productos</a>
+                </div>
+            </div>
+        </div>  
+    </section>
+    
+    <!--PRODUCTOS Destacados-->
+    <section class="section products" id="productos">
+        <div class="container">
+            <h2 class="section__title">Productos Destacados</h2>
+            <h3 class="section__subtitle">Las mejores ofertas y productos más vendidos</h3>
+            <div class="products__grid">
+                <!--PRODUCTO 1 TALADRO PERCUTOR-->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="./imagenes/productos/taladropercutor.png" alt="Taladro Percutor Profesional" width="280" height="200"/>
+                        <span class="product-card__tag">Destacado</span>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__category">Herramientas Eléctricas</div>
+                        <h3 class="product-card__name">Taladro Percutor Profesional</h3>
+                        <p class="product-card__description">1200W con mandril 13mm</p>
+                        <div class="product-card__price">$55.990</div>
+                        <div class="product-card__actions">
+                            <button class="btn add-to-cart" data-id="1" data-name="Taladro Percutor Profesional" data-price="55990">
+                                <i class="fas fa-cart-plus"></i> Agregar
+                            </button>
+                        </div>  
+                    </div>  
+                </div>
+                <!--PRODUCTO 2 - LLAVES-->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="./imagenes/productos/setdellaves.jpg" alt="Set de Llaves Combinadas" width="300" height="210"/>
+                        <span class="product-card__tag">Destacado</span>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__category">Herramientas Manuales</div>
+                        <h3 class="product-card__name">Set de Llaves Combinadas</h3>
+                        <p class="product-card__description">12 piezas 8-19mm, acero cromo vanadio</p>
+                        <div class="product-card__price">$18.990</div>
+                        <div class="product-card__actions">
+                            <button class="btn add-to-cart" data-id="2" data-name="Set de Llaves Combinadas" data-price="18990">
+                                <i class="fas fa-cart-plus"></i> Agregar
+                            </button>
+                        </div>  
+                    </div>  
+                </div>        
+                <!--PRODUCTO 3 - SEGURIDAD-->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="./imagenes/productos/kitdeseguridad.jpg" alt="Kit de Seguridad" width="300" height="200"/>
+                        <span class="product-card__tag">Destacado</span>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__category">Seguridad Industrial</div>
+                        <h3 class="product-card__name">Kit de Seguridad</h3>
+                        <p class="product-card__description">Cascos, guantes y lentes de Seguridad</p>
+                        <div class="product-card__price">$15.990</div>
+                        <div class="product-card__actions">
+                            <button class="btn add-to-cart" data-id="3" data-name="Kit de Seguridad" data-price="15990">
+                                <i class="fas fa-cart-plus"></i> Agregar
+                            </button>
+                        </div>  
+                    </div>  
+                </div>
+                <!--PODUCTO 4 - CABLE-->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="./imagenes/productos/rollocable2x2.5mm.jpg" alt="Cable Eléctrico 2x2.5mm" width="300" height="200"/>
+                        <span class="product-card__tag">Destacado</span>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__category">Material Eléctrico</div>
+                        <h3 class="product-card__name">Cable Eléctrico 2x2.5mm</h3>
+                        <p class="product-card__description">Rollo de 100 metros, calidad industrial</p>
+                        <div class="product-card__price">$8.990</div>
+                        <div class="product-card__actions">
+                            <button class="btn add-to-cart" data-id="4" data-name="Cable Eléctrico 2x2.5mm" data-price="8990">
+                                <i class="fas fa-cart-plus"></i> Agregar
+                            </button>
+                        </div>  
+                    </div>
+                </div>  
+                <!--PRODUCTO 5 - CEMENTO-->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="./imagenes/productos/cemento.png" alt="Cemento Super Pinguino x 25kg" width="300" height="200"/>
+                        <span class="product-card__tag">Destacado</span>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__category">Materiales de Construcción</div>
+                        <h3 class="product-card__name">Cemento Weber Super Pinguino x 25kg</h3>
+                        <p class="product-card__description">Mortero a base de cemento blanco</p>
+                        <div class="product-card__price">$58.990</div>
+                        <div class="product-card__actions">
+                            <button class="btn add-to-cart" data-id="5" data-name="Cemento blanco weber super pinguino x 25kg" data-price="58990">
+                                <i class="fas fa-cart-plus"></i> Agregar
+                            </button>
+                        </div>  
+                    </div>
+                </div>
+                <!-- PRODUCTOR 6 - PINTURA-->
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="./imagenes/productos/pintura.png" alt="Pintura de Poliuretano" width="300" height="200"/>
+                        <span class="product-card__tag">Destacado</span>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__category">Pinturas</div>
+                        <h3 class="product-card__name">Pintura de Poliuretano Industrial</h3>
+                        <p class="product-card__description">Pintura de Poliuretano Industrial blanca mate. 20 litros</p>
+                        <div class="product-card__price">$318.990</div>
+                        <div class="product-card__actions">
+                            <button class="btn add-to-cart" data-id="6" data-name="Pintura de Poliuretano Industrial blanca mate. 20 litros" data-price="318990">
+                                <i class="fas fa-cart-plus"></i> Agregar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    
+    <!--MEDIOS DE PAGO-->
+    <section class="section payment-methods" id="medios-de-pago">
+        <div class="container">
+            <h2 class="section__title">Medios de Pago</h2>
+            <div class="payment__grid">
+                <div class="payment-card">
+                    <div class="payment-card__icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="payment-card__title">Tarjetas de Crédito/Débito</h3>
+                    <p class="payment-card__description">Aceptamos Visa, MasterCard y American Express</p>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-card__icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 class="payment-card__title">Efectivo</h3>
+                    <p class="payment-card__description">Pago en efectivo en nuestra tienda física</p>    
+                </div>
+                <div class="payment-card">
+                    <div class="payment-card__icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="payment-card__title">Transferencia</h3>
+                    <p class="payment-card__description">Transferencias Bancarias Directas</p>
+                </div>
+                <div class="payment-card">
+                    <div class="payment-card__icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>  
+                    <h3 class="payment-card__title">Pago Móvil</h3>
+                    <p class="payment-card__description">Pago a través de aplicaciones móviles</p>
+                </div>
+            </div>  
+        </div>
+    </section>
+    
+    <!--FORMULARIO DE CONTACTO-->
+    <section class="section contact" id="contacto">
+        <div class="container">
+            <h2 class="section__title">Solicita tu cotización</h2>
+            <div class="contact__container">
+                <div class="contact-form">
+                    <form id="quote-form">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nombre Completo</label>
+                            <input type="text" id="name" class="form__control" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Correo Electrónico</label>
+                            <input type="email" id="email" class="form__control" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Teléfono</label>
+                            <input type="tel" id="phone" class="form__control" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="product" class="form__label">Producto de Interés</label>
+                            <select id="product" class="form__control" required>
+                                <option value="">Selecciona un producto</option>
+                                <option value="Taladro Percutor Profesional">Taladro Percutor Profesional</option>
+                                <option value="Set de Llaves Combinadas">Set de Llaves Combinadas</option>
+                                <option value="Kit de Seguridad">Kit de Seguridad</option>
+                                <option value="Cable Eléctrico 2x2.5mm">Cable Eléctrico 2x2.5mm</option>
+                                <option value="Otro">Otro producto</option> 
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Mensaje Adicional</label>
+                            <textarea id="message" class="form__control" placeholder="Describe tu solicitud o consulta..." required></textarea> 
+                        </div>
+                        <button type="submit" class="btn btn--primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Solicitar Cotización
+                        </button>    
+                    </form>
+                </div>
+                
+                <div class="contact__info">
+                    <div class="info-item">
+                        <div class="info-item__icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-item__content">
+                            <h3>Horario de Atención</h3>
+                            <p>Lunes a Viernes: 8:00 - 19:00<br> Sábado: 9:00 - 14:00</p>
+                        </div>
+                    </div>  
+                    <div class="info-item">
+                        <div class="info-item__icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-item__content">
+                            <h3>Teléfono</h3>
+                            <p>+54 9 299 5010054</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-item__icon">
+                            <i class="fas fa-envelope"></i> 
+                        </div>
+                        <div class="info-item__content">
+                            <h3>Email</h3>
+                            <p>contacto@ferreteriadelsur.com</p>
+                        </div>  
+                    </div>
+                    <div class="info-item">
+                        <div class="info-item__icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>      
+                        <div class="info-item__content">
+                            <h3>Dirección</h3>
+                            <p>Av. Industrial 1234, Neuquen, Argentina</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--LOGIN/REGISTRO -->
+    <div class="login-modal" id="login-modal">
+        <div class="modal-header">
+            <h3 id="modal-title">Iniciar Sesión</h3>
+            <button class="modal-close" id="close-login">&times;</button>
+        </div>
+        <div class="modal-body">
+            <!--FORMULARIO LOGIN-->
+            <form id="login-form" style="display: block;">
+                <div class="form__group">
+                    <label>Email</label>
+                    <input type="email" id="login-email" placeholder="correoelectronico@ejemplo.com" required class="form__control">
+                </div>
+                <div class="form__group">
+                    <label>Contraseña</label>
+                    <input type="password" id="login-password" placeholder="Tu contraseña" required class="form__control">
+                </div>
+                <button type="submit" class="btn btn--primary">Iniciar Sesión</button>
+                <p style="text-align: center; margin-top:15px;">¿No tienes cuenta? <a href="#" id="go-register">Registrate aquí</a>
+                </p>
+            </form>
+
+            <!--FORMULARIO REGISTRO-->
+            <form id="register-form" style="display: none;">
+                <div class="form__group">
+                    <label>Nombre completo</label>
+                    <input type="text" id="register-name" placeholder="Tu nombre" required class="form__control">
+                </div>
+                <div class="form__group">
+                    <label>Email</label>
+                    <input type="email" id="register-email" placeholder="correoelectronico@ejemplo.com" required class="form__control">
+                </div>
+                <div class="form__group">
+                    <label>Contraseña</label>
+                    <input type="password" id="register-password" placeholder="Minimo 6 caracteres" required class="form__control">
+                </div>
+                <div class="form__group">
+                    <label>Confirmar Contraseña</label>
+                    <input type="password" id="register-confirm" placeholder="Repite la contraseña" required class="form__control">
+                </div>
+                <button type="submit" class="btn btn--primary">Crear Cuenta</button>
+                <p style="text-align: center; margin-top: 15px;">¿Ya tienes tu cuenta?<a href="#" id="go-login">Iniciar Sesión</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!--INDICADOR DE USUARIO-->
+    <div id="user-indicator" style="display: none; position: fixed; top: 20px; right: 20px; background: #fff; padding: 10px; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;">
+        <span id="user-name" style="font-weight: bold;">Usuario</span>
+        <button id="logout-btn" style="margin-left: 10px; background: #f4a836; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; font-size: 12px;">
+            Salir
+        </button>
+    </div>
+
+    <!--CARRITO DE COMPRAS-->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart__header">
+            <h3>Tu Carrito de Compras</h3>
+            <button class="cart__close" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="cart__body">
+            <div class="cart__empty" id="cart-empty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Tu carrito está vacío.</p>
+            </div>
+
+            <div class="cart__items" id="cart-items"></div>  
+            <!--Los productos del carrito se agregarán aquí dinámicamente-->
+        </div>
+
+        <div class="cart__footer">
+            <div class="cart__summary">
+                <div class="cart__count">
+                    <span id="cart-count">0</span> productos
+                </div>
+                <div class="cart__total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0</span>
+                </div>  
+            </div>
+
+            <div class="cart__actions">
+                <button class="btn btn--primary" id="checkout-btn">
+                <i class="fas fa-shopping-basket"></i> Finalizar Compra
+                </button>
+                <button class="btn btn--secondary" id="clear-cart-btn">
+                <i class="fas fa-trash"></i> Vaciar Carrito
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!--PANEL DE ADMINISTRACIÓN-->
+    <div class="admin-panel" id="admin-panel" style="display: none;">
+        <div class="admin-panel__overlay" id="admin-overlay"></div>
+        <div class="admin-panel__content">
+            <div class="admin-header">
+                <h3><i class="fas fa-cogs"></i> Panel de Administración</h3>
+                <button class="admin-close" id="admin-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="admin-body">
+                <div class="admin-tabs">
+                    <button class="admin-tab active" data-tab="dashboard">
+                        <i class="fas fa-tachometer-alt"></i> Dashboard
+                    </button>
+                    <button class="admin-tab" data-tab="orders">
+                        <i class="fas fa-shopping-cart"></i> Órdenes
+                    </button>
+                    <button class="admin-tab" data-tab="products">
+                        <i class="fas fa-box"></i> Productos
+                    </button>
+                    <button class="admin-tab" data-tab="users">
+                        <i class="fas fa-users"></i> Usuarios
+                    </button>
+                    <button class="admin-tab" data-tab="quotations">
+                        <i class="fas fa-file-invoice-dollar"></i> Cotizaciones
+                    </button>
+                    <button class="admin-tab" data-tab="settings">
+                        <i class="fas fa-cog"></i> Configuración
+                    </button>
+                </div>
+
+                <div class="admin-content">
+                    <!--DASHBOARD-->
+                    <div class="admin-tab-content active" id="dashboard-tab">
+                        <h4>Resumen del Negocio</h4>
+                        <div class="dashboard-stats">
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h5>Ordenes Hoy</h5>    
+                                    <p id="orders-today">0</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h5>Ventas Totales</h5>    
+                                    <p id="total-sales">$0</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h5>Usuarios Registrados</h5>
+                                    <p id="total-users">0</p>
+                                </div>
+                            </div> 
+                            <div class="stat-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <h5>Productos</h5>
+                                    <p id="total-products">6</p>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="dashboard-charts">
+                            <div class="chart-container">
+                                <h5>Ventas Mensuales</h5>
+                                <canvas id="sales-chart"></canvas>  
+                            </div>
+                            <div class="chart-container">
+                                <h5>Productos más Vendidos</h5>
+                                <canvas id="products-chart"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="recent-orders">
+                            <h5>Ordenes Recientes</h5>
+                            <div id="recent-orders-list">
+                                <p>No hay órdenes recientes</p>
+                            </div>
+                        </div>
+                    </div>
+                                
+                    <!--ÓRDENES-->   
+                    <div class="admin-tab-content" id="orders-tab">           
+                        <div class="admin-tab-header">
+                            <h4>Gestión de Órdenes</h4>
+                            <div class="admin-actions">
+                                <button class="btn btn--small" id="refresh-orders">
+                                    <i class="fas fa-sync"></i> Actualizar
+                                </button>   
+                            </div>
+                        </div>
+
+                        <div class="filters">
+                            <select id="order-status-filter" class="form-control">
+                                <option value="all">Todas las Órdenes</option>
+                                <option value="pending">Pendientes</option>
+                                <option value="processing">En proceso</option>
+                                <option value="completed">Completadas</option>
+                                <option value="cancelled">Canceladas</option>
+                            </select>
+                            <input type="date" id="order-date-filter" class="form-control" placeholder="Filtrar por fecha">
+                        </div>
+
+                        <div class="orders-table-container">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID Orden</th>
+                                        <th>Cliente</th>
+                                        <th>Fecha</th>
+                                        <th>Total</th>
+                                        <th>Estado</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="orders-table-body">
+                                    <tr>
+                                        <td colspan="6" style="text-align: center;">No hay órdenes registradas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Productos -->
+                    <div class="admin-tab-content" id="products-tab">
+                        <div class="admin-tab-header">
+                            <h4>Gestión de Productos</h4>
+                            <div class="admin-actions">
+                                <button class="btn btn--small btn--primary" id="add-product-btn">
+                                    <i class="fas fa-plus"></i> Nuevo Producto
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="products-grid-admin" id="products-grid-admin">
+                            <!-- Los productos se cargarán aquí dinámicamente -->
+                        </div>
+
+                        <!-- Formulario para agregar/editar producto -->
+                        <div class="product-form-container" id="product-form-container" style="display: none;">
+                            <form id="product-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="product-name">Nombre del Producto</label>
+                                        <input type="text" id="product-name" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="product-price">Precio ($)</label>
+                                        <input type="number" id="product-price" class="form-control" min="0" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="product-category">Categoría</label>
+                                        <select id="product-category" class="form-control" required>
+                                            <option value="">Seleccionar categoría</option>
+                                            <option value="Herramientas Manuales">Herramientas Manuales</option>
+                                            <option value="Herramientas Eléctricas">Herramientas Eléctricas</option>
+                                            <option value="Material Eléctrico">Material Eléctrico</option>
+                                            <option value="Seguridad Industrial">Seguridad Industrial</option>
+                                            <option value="Materiales de Construcción">Materiales de Construcción</option>
+                                            <option value="Pinturas">Pinturas</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="product-stock">Stock</label>
+                                        <input type="number" id="product-stock" class="form-control" min="0" value="10">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="product-description">Descripción</label>
+                                    <textarea id="product-description" class="form-control" rows="3"></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="product-image">URL de la Imagen</label>
+                                    <input type="text" id="product-image" class="form-control" 
+                                           placeholder="ej: ./imagenes/productos/nombre.jpg">
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn--secondary" id="cancel-product-form">
+                                        Cancelar
+                                    </button>
+                                    <button type="submit" class="btn btn--primary">
+                                        <i class="fas fa-save"></i> Guardar Producto
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Usuarios -->
+                    <div class="admin-tab-content" id="users-tab">
+                        <div class="admin-tab-header">
+                            <h4>Gestión de Usuarios</h4>
+                            <div class="admin-actions">
+                                <input type="text" id="user-search" class="form-control" placeholder="Buscar usuario...">
+                            </div>
+                        </div>
+                        
+                        <div class="users-table-container">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Email</th>
+                                        <th>Fecha Registro</th>
+                                        <th>Tipo</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="users-table-body">
+                                    <tr>
+                                        <td colspan="6" style="text-align: center;">No hay usuarios registrados</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Cotizaciones -->
+                    <div class="admin-tab-content" id="quotations-tab">
+                        <div class="admin-tab-header">
+                            <h4>Cotizaciones Recibidas</h4>
+                            <div class="admin-actions">
+                                <button class="btn btn--small" id="export-quotations">
+                                    <i class="fas fa-download"></i> Exportar
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="quotations-list" id="quotations-list">
+                            <p>No hay cotizaciones recibidas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Configuración -->
+                    <div class="admin-tab-content" id="settings-tab">
+                        <h4>Configuración del Sistema</h4>
+                        
+                        <div class="settings-sections">
+                            <div class="settings-section">
+                                <h5><i class="fas fa-store"></i> Información de la Tienda</h5>
+                                <form id="store-settings-form">
+                                    <div class="form-group">
+                                        <label for="store-name">Nombre de la Tienda</label>
+                                        <input type="text" id="store-name" class="form-control" value="Ferretería Industrial del Sur">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="store-email">Email de Contacto</label>
+                                        <input type="email" id="store-email" class="form-control" value="contacto@ferreteriadelsur.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="store-phone">Teléfono</label>
+                                        <input type="tel" id="store-phone" class="form-control" value="+54 9 2995010054">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="store-address">Dirección</label>
+                                        <input type="text" id="store-address" class="form-control" value="Av. Industrial 1234, Neuquen, Argentina">
+                                    </div>
+                                    <button type="submit" class="btn btn--primary">Guardar Configuración</button>
+                                </form>
+                            </div>
+                            
+                            <div class="settings-section">
+                                <h5><i class="fas fa-cog"></i> Configuración General</h5>
+                                <form id="general-settings-form">
+                                    <div class="form-group">
+                                        <label for="currency">Moneda</label>
+                                        <select id="currency" class="form-control">
+                                            <option value="AR">Peso Argentino (Ar)</option>
+                                            <option value="USD">Dólar Americano (USD)</option>
+                                            <option value="EUR">Euro (EUR)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tax-rate">Tasa de Impuesto (%)</label>
+                                        <input type="number" id="tax-rate" class="form-control" value="19" min="0" max="100">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>
+                                            <input type="checkbox" id="maintenance-mode"> Modo Mantenimiento
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn--primary">Guardar Cambios</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <h2>Ferretería Industrial del Sur</h2>
+                    <p>Calidad y Confianza para tus Proyectos</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/56912345678" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>  
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#categorias">Categorías</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Industrial 1234, Neuquen, Argentina</p>
+                    <p><i class="fas fa-phone"></i> +54 9 299 5010054</p>
+                    <p><i class="fas fa-envelope"></i> contacto@ferreteriadelsur.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horario de Atención</h3>    
+                    <p><i class="fas fa-clock"></i> Lunes a Viernes: 8:00 - 19:00</p>
+                    <p><i class="fas fa-clock"></i> Sábado: 9:00 - 14:00</p>
+                    <p><i class="fas fa-clock"></i> Domingo: Cerrado</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Ferretería Industrial del Sur. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/productos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
